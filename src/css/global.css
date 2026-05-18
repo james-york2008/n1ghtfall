@@ -8,5 +8,16 @@
 }
 
 body {
-    font-family: sans-serif, serif, times;
+    font-family: Arial, sans-serif;
+}
+
+.cutButton {
+    clip-path: var(--clipped-button);
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.CtaButton {
+    background-color: var(--color-text-accent);
 }

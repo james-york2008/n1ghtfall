@@ -1,0 +1,81 @@
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-5);
+}
+
+#hero h2 {
+  font-size: var(--text-lg);
+  color: white;
+  line-height: 2rem;
+}
+
+#hero p {
+  color: grey;
+  font-size: var(--text-sm);
+  width: 9rem;
+  line-height: 1.3rem;
+  padding-top: var(--space-5);
+}
+
+#hero h2, #hero p {
+  background-color: transparent;
+}
+
+.textAccent {
+  color: var(--color-text-accent);
+}
+
+.heroButtons {
+  padding: 0.3rem;
+  font-size: 0.5rem;
+  margin: 0.3px;
+}
+
+#viewRosterButton {
+  margin-right: var(--space-3);
+  border: none;
+}
+
+#heroButtonsWrapper {
+  display: flex;
+  background-color: transparent;
+  margin-top: var(--space-3);
+}
+
+#ourSchedule {
+  background-color: rgb(8, 10, 50);
+}
+@media (min-width: 762px) {
+  #hero {
+    min-height: 30rem;
+  }
+
+  #hero p {
+    width: 15rem;
+    font-size: var(--text-md);
+    line-height: 1.5rem;
+  }
+
+  #hero h2 {
+    font-size: var(--text-xl);
+    line-height: 3rem;
+  }
+
+  .heroButtons {
+    padding: 0.5rem;
+    font-size: var(--text-md);
+  }
+}
+
+@media (min-width: 992px) {  
+  #hero p {
+    width: 15rem;
+    font-size: var(--text-lg);
+  }
+
+  #hero h2 {
+    font-size: 2.5rem;
+  }
+}

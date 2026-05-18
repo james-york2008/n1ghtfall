@@ -5,13 +5,13 @@ export default function Navbar() {
   return (
     <>
       <nav id='navbar'>
-        <img src={logo} id='logo'/>
+        <img src={logo} id='logo' alt=''/>
         <div id='title'>
           <h1>N1ghtfall</h1>
           <p>STRINOVA COMPETITIVE UNION</p>
         </div>
 
-        <a href='https://discord.gg/rQNh4gKG2p' id='discordButton'><img src={discordIcon} />JOIN DISCORD</a>
+        <a href='https://discord.gg/rQNh4gKG2p' id='discordButton' className='cutButton CtaButton'><img src={discordIcon} />JOIN DISCORD</a>
       </nav>
     </>
   )
