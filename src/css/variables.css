@@ -28,9 +28,9 @@
     --space-8: 64px;
 
     --gradient-section-border: linear-gradient(
-        -45deg,
+        45deg,
         rgb(139, 92, 246), 
-        rgb(42, 27, 74)
+        rgb(13, 8, 34) 90%
     );
 
     --clipped-button: polygon(

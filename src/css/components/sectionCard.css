@@ -1,0 +1,28 @@
+.sectionCard {
+  border: none;
+  clip-path: var(--clipped-button);
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: rgb(from var(--color-text-accent) r g b / 0.3);
+  padding: 3px;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#sectionsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media(min-width: 762px) {
+  .sectionCard {
+    margin: 2.5rem 2.5rem 0 2.5rem;
+    padding: 5px;
+  }
+}
+
+@media(min-width: 992px) {
+  .sectionCard {
+    padding: 7px;
+  }
+}
