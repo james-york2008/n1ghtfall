@@ -11,7 +11,7 @@ export default function Navbar() {
           <p>STRINOVA COMPETITIVE UNION</p>
         </div>
 
-        <a href='https://discord.gg/rQNh4gKG2p' id='discordButton' className='cutButton CtaButton'><img src={discordIcon} />JOIN DISCORD</a>
+        <a href='https://discord.gg/rQNh4gKG2p' id='discordButton' className='cutButton CtaButton'><img src={discordIcon}  alt=''/>JOIN DISCORD</a>
       </nav>
     </>
   )
