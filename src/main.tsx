@@ -5,6 +5,7 @@ import './css/variables.css'
 import './css/global.css'
 import './css/components/navbar.css'
 import './css/components/hero.css'
+import './css/components/sectionCard.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
