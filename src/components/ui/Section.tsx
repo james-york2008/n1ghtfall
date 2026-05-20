@@ -1,8 +1,4 @@
-import type { ReactNode } from 'react'
-
-type SectionProps = {
-  children: ReactNode
-}
+import type { SectionProps } from '../../types/section'
 
 export default function SectionCard ({
   children,
