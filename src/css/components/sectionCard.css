@@ -5,17 +5,12 @@
   border-bottom-left-radius: 5px;
   background-color: rgb(from var(--color-text-accent) r g b / 0.3);
   padding: 3px;
-  margin: 1.5rem 1.5rem 0 1.5rem;
+  margin: 1rem 1rem 0 1rem;
 }
 
 .sectionCard h3 {
   padding: 1rem 0 1.5rem 1rem;
 }
-
-.sectionCard article {
-  padding: 0 1rem 1rem 1rem;
-}
-
 
 #sectionsContainer {
   display: flex;

@@ -24,6 +24,17 @@ export const events: Event[] = [
   },
 
   {
+    id: 'practice-night-internal-practice-2026-05-27',
+    dateDay: 27,
+    dateMonth: 'MAY',
+    eventLabel: 'PRACTICE NIGHT',
+    eventDetails: 'Internal Practice',
+    eventTime: '8:00 PM',
+    eventTimezone: 'EST',
+    eventType: 'PRACTICE',
+  },
+
+  {
     id: 'tournament-starlight-clash-qualifiers-2026-05-29',
     dateDay: 29,
     dateMonth: 'MAY',
