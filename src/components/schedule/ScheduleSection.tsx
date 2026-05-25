@@ -5,11 +5,13 @@ import Event from "./EventCard";
 export default function ScheduleSection () {
   return(
     <SectionCard>
-    <h3>UPCOMING SCHEDULE</h3>
+    <section id="schedule">
+      <h3>UPCOMING SCHEDULE</h3>
     
-    {events.map(event => (
-      <Event key={event.id} event={event} />
-    ))}
+      {events.map(event => (
+        <Event key={event.id} event={event} />
+      ))}
+    </section>
     </SectionCard>
   )
 }

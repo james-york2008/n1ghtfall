@@ -8,7 +8,7 @@ import './css/components/hero.css'
 import './css/components/sectionCard.css'
 import './css/components/scheduleSection.css'
 import './css/components/rosterSection.css'
-
+import './css/components/recruitmentSection.css'
 import './css/components/footer.css'
 
 createRoot(document.getElementById('root')!).render(
