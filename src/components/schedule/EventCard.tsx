@@ -15,7 +15,7 @@ export default function Event({ event }:Props) {
       </div>
 
       <div className="eventTime">
-        <img src={clock} alt="" />
+        <img src={clock} alt="" loading='lazy' />
         <p>{event.eventTime}<br />{event.eventTimezone}</p>
       </div>
 

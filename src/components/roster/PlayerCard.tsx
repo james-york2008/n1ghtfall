@@ -29,7 +29,7 @@ export default function Player({ player }:Props) {
   return (
     <article className='player'>
       <div className='playerNameAndAvatar'>
-        <img src={playerAvatar} alt='' className='playerAvatar'/>
+        <img src={playerAvatar} alt='' className='playerAvatar' loading='lazy' />
         <h4>{player.name}</h4>
       </div>
 
