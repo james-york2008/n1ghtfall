@@ -17,7 +17,7 @@ export default function RequirementCard({ requirement }:Props) {
 
   return(
     <div className="requirement">
-      <img src={requirementIcon} alt="" />
+      <img src={requirementIcon} alt="" loading='lazy' />
       <span>{requirement.requirementText}</span>
     </div>
   )
