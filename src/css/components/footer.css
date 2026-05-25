@@ -7,8 +7,24 @@
   font-size: var(--text-sm);
 }
 
+#tagline {
+  color: var(--color-text-accent);
+  display: flex;
+  justify-content: center;
+  margin: var(--space-6);
+  letter-spacing: var(--space-1);
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
 @media (min-width: 500px) {
   #disclaimer {
     max-width: 450px;
+  }
+}
+
+@media (min-width: 992px) {
+  #tagline {
+    font-size: var(--text-xl);
   }
 }
