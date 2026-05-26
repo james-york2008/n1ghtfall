@@ -1,16 +1,10 @@
+import fallbackImage from '../../assets/fallbackImage.png'
 import type { Player } from '../../types/player'
+import RenderCharacters from './renderCharacters'
 
 type Props = {
   player: Player
 }
-
-const characterAvatars: Record<string, string> = import.meta.glob(
-  '../../assets/characterAvatars/*',
-  {
-    eager: true,
-    import: 'default',
-  }
-)
 
 const playerAvatars: Record<string, string> = import.meta.glob(
   '../../assets/playerAvatars/*',
@@ -22,12 +16,7 @@ const playerAvatars: Record<string, string> = import.meta.glob(
 
 
 export default function Player({ player }:Props) {
-  let playerAvatar = playerAvatars[`../../assets/playerAvatars/${player.avatarLink}`] ?? 'src/assets/fallbackImage.png'
-
-  const firstCharacterAvatarPath = characterAvatars[`../../assets/characterAvatars/${player.characterAvatarOneLink}`] ?? 'src/assets/fallbackImage.png'
-  const secondCharacterAvatarPath = characterAvatars[`../../assets/characterAvatars/${player.characterAvatarTwoLink}`] ?? 'src/assets/fallbackImage.png'
-
-  const characterWikiUrl = 'https://strinova.org/wiki/Characters'
+  let playerAvatar = playerAvatars[`../../assets/playerAvatars/${player.avatarLink}`] ?? fallbackImage
 
   return (
     <article className='player'>
@@ -38,10 +27,8 @@ export default function Player({ player }:Props) {
 
       <p className='playerRole'>{player.role}</p>
 
-      <div className='mainCharacters'>
-        <a href={characterWikiUrl} target='_blank' rel='noopener noreferrer'><img src={firstCharacterAvatarPath} alt={player.characterAvatarOneAlt} className='characterAvatars' loading='lazy' decoding='async' /></a>
-        
-        <a href={characterWikiUrl} target='_blank' rel='noopener noreferrer'><img src={secondCharacterAvatarPath} alt={player.characterAvatarTwoAlt} className='characterAvatars' loading='lazy' decoding='async' /></a>
+      <div className='mainCharacters' id='preferredCharacters'>
+        <RenderCharacters player={player} />
       </div>
     </article>
   )

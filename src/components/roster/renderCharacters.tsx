@@ -1,0 +1,30 @@
+import fallbackImage from '../../assets/fallbackImage.png' 
+import type { Player } from "../../types/player"
+
+type Props = {
+  player: Player
+}
+
+const characterAvatars: Record<string, string> = import.meta.glob(
+  '../../assets/characterAvatars/*',
+  {
+    eager: true,
+    import: 'default',
+  }
+)
+
+export default function RenderCharacters({ player }:Props) {
+  const characterWikiUrl = 'https://strinova.org/wiki/Characters'
+
+  return(
+    <div>
+      {player.preferredCharacters.map((character) => {
+        let characterAvatar = characterAvatars[`../../assets/characterAvatars/${character.characterImageLink}`] ?? fallbackImage
+        
+        return(
+          <a href={characterWikiUrl} target='_blank' rel='noopener noreferrer' key={character.id}><img src={characterAvatar} alt={character.altText} className="characterAvatars" loading="lazy" decoding="async" /></a>
+        )
+      })}
+    </div>
+  )
+}
