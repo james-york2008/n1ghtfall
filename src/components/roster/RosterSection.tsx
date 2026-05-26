@@ -5,7 +5,7 @@ import Player from './PlayerCard'
 export default function RosterSection () {
   return (
     <SectionCard>
-      <section id="roster">
+      <section className="roster">
         <h3>ACTIVE ROSTER</h3>
 
         {players.map(player => (

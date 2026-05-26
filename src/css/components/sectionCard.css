@@ -1,42 +1,36 @@
 .sectionCard {
-  border: none;
   clip-path: var(--clipped-button);
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  background-color: rgb(from var(--color-text-accent) r g b / 0.3);
-  padding: 3px;
+  background-color: rgb(8, 5, 16);
   margin: 1rem 1rem 0 1rem;
   width: 100%;
+  border: var(--section-border);
+  padding: var(--space-1);
 }
 
 .sectionCard h3 {
   padding: 1rem 0 1.5rem 1rem;
 }
 
-#sectionsContainer {
+.sectionsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-@media(min-width: 762px) {
+@media(min-width: 768px) {
   .sectionCard {
-    margin: 2.5rem 2.5rem 0 2.5rem;
-    padding: 5px;
+    border-width: 5px;
+    margin: var(--space-3);
   }
   
   .sectionCard h3 {
-    font-size: 1.2rem;
+    font-size: var(--text-lg);
   }
 }
 
 @media(min-width: 992px) {
   .sectionCard {
-    padding: 7px;
+    padding: var(--space-3);
     width: 40%;
-  }
-
-  .sectionCard h3 {
-    font-size: 1.5rem;
   }
 }

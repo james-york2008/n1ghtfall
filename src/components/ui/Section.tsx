@@ -4,8 +4,8 @@ export default function SectionCard ({
   children,
 }: SectionProps) {
   return(
-    <section className="sectionCard">
+    <div className="sectionCard">
       {children}
-    </section>
+    </div>
   )
 }

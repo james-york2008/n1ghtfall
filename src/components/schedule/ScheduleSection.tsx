@@ -5,7 +5,7 @@ import Event from "./EventCard";
 export default function ScheduleSection () {
   return(
     <SectionCard>
-    <section id="schedule">
+    <section className="schedule">
       <h3>UPCOMING SCHEDULE</h3>
     
       {events.map(event => (

@@ -1,6 +1,6 @@
-import type { Requirements } from "../types/requirement";
+import type { Requirement } from "../types/requirement";
 
-export const requirements: Requirements[] = [
+export const requirements: Requirement[] = [
   {
     id: 'requirement1',
     requirementIcon: 'competitiveMindset.png',
