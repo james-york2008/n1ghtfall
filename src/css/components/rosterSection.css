@@ -33,6 +33,7 @@
 .characterAvatars {
   height: var(--avatar-md);
   padding: 0 var(--space-2);
+  border-radius: 50%;
 }
 
 @media (min-width: 992px) {

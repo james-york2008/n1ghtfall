@@ -22,9 +22,10 @@ const playerAvatars: Record<string, string> = import.meta.glob(
 
 
 export default function Player({ player }:Props) {
-  const playerAvatar = playerAvatars[`../../assets/playerAvatars/${player.avatarLink}`]
-  const firstCharacterAvatarPath = characterAvatars[`../../assets/characterAvatars/${player.characterAvatarOneLink}`]
-  const secondCharacterAvatarPath = characterAvatars[`../../assets/characterAvatars/${player.characterAvatarTwoLink}`]
+  let playerAvatar = playerAvatars[`../../assets/playerAvatars/${player.avatarLink}`] ?? 'src/assets/fallbackImage.png'
+
+  const firstCharacterAvatarPath = characterAvatars[`../../assets/characterAvatars/${player.characterAvatarOneLink}`] ?? 'src/assets/fallbackImage.png'
+  const secondCharacterAvatarPath = characterAvatars[`../../assets/characterAvatars/${player.characterAvatarTwoLink}`] ?? 'src/assets/fallbackImage.png'
 
   const characterWikiUrl = 'https://strinova.org/wiki/Characters'
 

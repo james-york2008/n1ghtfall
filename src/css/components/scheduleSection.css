@@ -6,12 +6,13 @@
   margin: var(--space-3) 0;
 }
 
-.event .eventTime img {
+.eventTime img {
   height: var(--icon-md);
 }
 
 .event .eventTime {
   display: flex;
+  align-items: center;
 }
 
 .eventLabel {
@@ -62,6 +63,10 @@
 
   .eventTime p {
     font-size: var(--text-md);
+  }
+
+  .eventTime img {
+    height: var(--icon-lg);
   }
 }
 

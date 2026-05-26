@@ -6,7 +6,7 @@ export default function RosterSection () {
   return (
     <SectionCard>
       <section className="roster">
-        <h3>ACTIVE ROSTER</h3>
+        <h3 id="roster">ACTIVE ROSTER</h3>
 
         {players.map(player => (
           <Player key={player.id} player={player} />
