@@ -1,23 +1,33 @@
 .player {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: var(--space-1);
 }
 
 .playerNameAndAvatar {
   display: flex;
   align-items: center;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.playerNameAndAvatar h4 {
+  max-width: 125px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .playerAvatar {
   height: var(--avatar-sm);
   border-radius: 50%;
-  padding: 0 var(--space-3);
+  padding: 0;
 }
 
 .playerRole {
   color: var(--color-text-secondary);
-  padding-left: var(--space-1);
+  margin-left: var(--space-1);
 }
 
 .characterAvatars {
@@ -27,7 +37,7 @@
 
 @media (min-width: 992px) {
   .player {
-    padding: 0.1rem;
+    padding: var(--space-1);
   }
 
   .playerAvatar {
@@ -36,6 +46,6 @@
   }
   
   .playerRole {
-    padding-left: var(--space-3); 
+    margin-left: var(--space-3); 
   }
 }

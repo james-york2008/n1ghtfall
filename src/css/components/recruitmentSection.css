@@ -1,33 +1,29 @@
-#requirements {
+.requirements {
   display: flex;
   flex-direction: column;
+  gap: var(--space-1);
 }
 
 .requirement {
   display: flex;
   align-items: center;
-  padding-left: 2rem;
+  gap: var(--space-3);
   font-size: 1rem;
-}
-
-#requirements h3 {
-  padding: 1rem;
 }
 
 .requirement img {
   height: var(--icon-lg); 
 }
 
-#applyNow {
-  padding: 0.5rem 3rem;
-  margin: 1rem;
-  max-width: 66%;
+.applyNow {
+  padding: var(--space-2) var(--space-5);
+  margin: var(--space-4);
   font-size: 1rem;
+  width: 66%;
 }
 
-@media (min-width: 762px) {
+@media (min-width: 768px) {
   .requirement {
-    padding: 0;
     font-size: 1.3rem;
   }
 
@@ -35,7 +31,13 @@
     height: 3rem; 
   }  
   
-  #applyNow {
+  .applyNow {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .applyNow {
+    width: auto;
   }
 }

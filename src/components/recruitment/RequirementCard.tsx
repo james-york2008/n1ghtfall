@@ -1,7 +1,7 @@
-import type { Requirements } from "../../types/requirement";
+import type { Requirement } from "../../types/requirement";
 
 type Props = {
-  requirement: Requirements
+  requirement: Requirement
 }
 
 const requirementIcons: Record<string, string> = import.meta.glob(
@@ -17,7 +17,7 @@ export default function RequirementCard({ requirement }:Props) {
 
   return(
     <div className="requirement">
-      <img src={requirementIcon} alt="" loading='lazy' />
+      <img src={requirementIcon} alt="" loading='lazy' decoding="async" aria-hidden="true" />
       <span>{requirement.requirementText}</span>
     </div>
   )

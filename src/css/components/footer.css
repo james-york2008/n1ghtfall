@@ -1,30 +1,36 @@
-#disclaimer, #disclaimer a {
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.disclaimer {
+  font-size: var(--text-sm);
   color: var(--color-text-secondary);
 }
 
-#disclaimer {
-  padding: 1rem;
-  font-size: var(--text-sm);
+.disclaimerWrapper {
+  padding: var(--space-5);
 }
 
-#tagline {
+.disclaimer a {
   color: var(--color-text-accent);
-  display: flex;
-  justify-content: center;
+}
+
+.tagline {
+  color: var(--color-text-accent);
+  text-align: center;
   margin: var(--space-6);
-  letter-spacing: var(--space-1);
+  letter-spacing: 0.1em;
   line-height: 2.5rem;
-  font-size: 1.5rem;
+  font-size: var(--text-lg);
 }
 
 @media (min-width: 500px) {
-  #disclaimer {
+  .disclaimer {
     max-width: 450px;
   }
-}
 
-@media (min-width: 992px) {
-  #tagline {
+  .tagline {
     font-size: var(--text-xl);
   }
 }

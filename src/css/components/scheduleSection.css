@@ -1,8 +1,9 @@
 .event {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   font-size: var(--text-sm);
-  padding: 0 1rem 1rem 1rem;
+  gap: var(--space-1);
+  margin: var(--space-3) 0;
 }
 
 .event .eventTime img {
@@ -19,11 +20,6 @@
   font-size: var(--text-sm);
 }
 
-.eventLabelContainer {
-  padding-right: var(--space-3);
-  padding-left: var(--space-1);
-}
-
 .eventLabelContainer p {
   color: var(--color-text-secondary);
   font-size: var(--text-xs);
@@ -32,43 +28,44 @@
 .eventDate {
   padding: var(--space-2);
   align-content: center;
-  background-color: rgb(from var(--color-text-secondary) r g b / 0.1);
+  background-color: rgb(170, 170, 190, 0.1);
   border-radius: var(--radius-md);
   font-size: 0.7rem;
   color: var(--color-text-secondary);
 }
 
 .eventDate .dateDay {
-  font-size: var(--text-md);
-  color: white;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  margin-bottom: -10px;
+  font-size: var(--text-sm);
+  color: var(--color-text-primary);
+  display: inline-block;
 }
 
 .eventTime p {
-  padding-right: var(--space-3);
   color: var(--color-text-secondary);
+  font-size: var(--text-xs);
 }
 
 .eventType {
-  background-color: rgb(from var(--color-text-accent) r g b / 0.1);
-  height: 1rem;
-  padding: 0.5rem 0.5rem 1.3rem 0.5rem;
+  background-color: rgb(98, 10, 176, 0.1);
+  padding: var(--space-1) var(--space-3);
   border-radius: var(--radius-sm);
   color: rgb(224, 176, 255);
-  margin-left: var(--space-4);
-  font-size: 0.7rem;
+  margin-left: var(--space-1);
+  font-size: var(--text-xs);
+  margin: auto 2px auto auto;
 }
 
-@media (min-width: 762px) {
+@media (min-width: 768px) {
   .event {
     font-size: var(--text-md);
   }  
+
+  .eventTime p {
+    font-size: var(--text-md);
+  }
 }
 
-@media (min-width: 762px) {
+@media (min-width: 992px) {
   .event {
     font-size: var(--text-lg);
   }  

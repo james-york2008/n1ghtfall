@@ -11,11 +11,13 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
-      <div id='sectionsContainer'>
+      
+      <main className='sectionsContainer'>
         <ScheduleSection />
         <RosterSection />
         <RecruitmentSection />
-      </div>
+      </main>
+      
       <Footer />  
     </>
   )

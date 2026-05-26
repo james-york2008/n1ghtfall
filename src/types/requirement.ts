@@ -1,4 +1,4 @@
-export type Requirements = {
+export type Requirement = {
   id: string,
   requirementIcon: string,
   requirementText: string
