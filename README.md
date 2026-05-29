@@ -1,9 +1,21 @@
-Live Site: There is currently no active site.
+Live Site: https://james-york2008.github.io/n1ghtfall/
 
-About: N1ghtfall is a competitive Strinova mobile union I plan on making when the global version of the game releases. This page will serve as a web hub for team organization, event scheduling, displaying the active roster, and recruiting new members. The current plan is to use TypeScript data to render scheduled events, the roster, and the requirements. The form for applying will be made using Google Forms. Currently, most of the information provided is placeholder data.
+About: N1ghtfall is a competitive Strinova mobile union I plan on making when the global version of the game releases. This web application will serve as a web hub for team organization and recruiting new members. The page dynamically renders a schedule, roster, and requirements to join. Currently, most of the information is placeholder data.
 
-Stack: -HTML -CSS -ReactJS -TypeScript
+Stack: -ReactJS -TypeScript -HTML -CSS
 
 Challenges Faced and Lessons Learned: 
+One of the biggest issues I faced was asset managing. I largely solved this issue by replacing manual imports with Vite's method import.meta.glob. This decision improved scalability dramatically, as well as maintainability. 
+
+I also faced some deployment problems that did not appear in the local environment. One of which was a white screen issue after deployment to GitHub pages. Debugging this issue and several others taught me how bundlers, routing behavior, and asset paths differ between development and production environments.
+
+Another challenge was consistant styling across the entire product while avoiding unintended side effects. In correcting these issues, I learned the importance of scoped styling, and consistency across different files.
+
+Overall, this project helped me gain real world experience with React project structure, debugging workflows, and TypeScript-based UI code.
 
 Potential Future Improvements: 
+=More thoroughly standardize the visual design system.
+=Replace placeholder data with real content that I will update manually. 
+=Rework the hero section to improve mobile responsive design and resolve background rendering issues.
+=Expand the application with community focused features like a match history section, or a media gallery for clips and highlights.
+=Implement automated testing with Jest to strengthen long-term maintainability and reduce regression issues as the application expands.
