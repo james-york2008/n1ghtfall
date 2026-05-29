@@ -1,6 +1,6 @@
 import fallbackImage from '../../assets/fallbackImage.png'
 import type { Player } from '../../types/player'
-import RenderCharacters from './renderCharacters'
+import RenderCharacters from './RenderCharacters'
 
 type Props = {
   player: Player
