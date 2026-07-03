@@ -1,9 +1,9 @@
-import Navbar from './components/layout/Navbar'
-import Hero from './components/hero/HeroSection'
-import ScheduleSection from './components/schedule/ScheduleSection'
-import RosterSection from './components/roster/RosterSection'
-import RecruitmentSection from './components/recruitment/RecruitmentSection'
-import Footer from './components/layout/Footer'
+import Navbar from "./components/layout/Navbar"
+import Hero from "./components/hero/HeroSection"
+import ScheduleSection from "./components/schedule/ScheduleSection"
+import RosterSection from "./components/roster/RosterSection"
+import RecruitmentSection from "./components/recruitment/RecruitmentSection"
+import Footer from "./components/layout/Footer"
 
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
       <Navbar />
       <Hero />
       
-      <main className='sectionsContainer'>
+      <main className="sectionsContainer">
         <ScheduleSection />
         <RosterSection />
         <RecruitmentSection />

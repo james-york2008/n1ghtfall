@@ -5,10 +5,10 @@ type Props = {
 }
 
 const requirementIcons: Record<string, string> = import.meta.glob(
-  '../../assets/icons/*',
+  "../../assets/icons/*",
   {
     eager: true,
-    import: 'default'
+    import: "default"
   }
 )
 
@@ -17,7 +17,7 @@ export default function RequirementCard({ requirement }:Props) {
 
   return(
     <div className="requirement">
-      <img src={requirementIcon} alt="" loading='lazy' decoding="async" aria-hidden="true" />
+      <img src={requirementIcon} alt="" loading="lazy" decoding="async" aria-hidden="true" />
       <span>{requirement.requirementText}</span>
     </div>
   )

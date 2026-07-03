@@ -1,5 +1,5 @@
-import clock from '../../assets/icons/clock.png'
-import type { Event as EventType } from '../../types/event'
+import clock from "../../assets/icons/clock.png"
+import type { Event as EventType } from "../../types/event"
 
 type Props = {
   event: EventType
@@ -15,7 +15,7 @@ export default function Event({ event }:Props) {
       </div>
 
       <div className="eventTime">
-        <img src={clock} alt="" loading='lazy' />
+        <img src={clock} alt="" loading="lazy" />
         <p>{event.eventTime}<br />{event.eventTimezone}</p>
       </div>
 

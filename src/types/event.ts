@@ -6,5 +6,5 @@ export type Event = {
   eventDetails: string
   eventTime: string
   eventTimezone: string
-  eventType: 'SCRIM' | 'PRACTICE' | 'TOURNAMENT'
+  eventType: "SCRIM" | "PRACTICE" | "TOURNAMENT"
 }
