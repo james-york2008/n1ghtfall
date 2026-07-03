@@ -1,5 +1,5 @@
 import SectionCard from "../ui/Section";
-import { requirements } from '../../data/requirements'
+import { requirements } from "../../data/requirements"
 import RequirementCard from "./RequirementCard";
 
 export default function RecruitmentSection () {
