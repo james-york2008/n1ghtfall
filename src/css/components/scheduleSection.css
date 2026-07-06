@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   font-size: var(--text-sm);
-  gap: var(--space-1);
   margin: var(--space-3) 0;
 }
 
@@ -16,7 +15,7 @@
 }
 
 .eventLabel {
-  color: var(--color-text-accent);
+  color: rgb(196, 0, 255);
   padding-bottom: var(--space-1);
   font-size: var(--text-sm);
 }

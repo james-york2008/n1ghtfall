@@ -21,7 +21,7 @@ export default function Player({ player }:Props) {
   return (
     <article className="player">
       <div className="playerNameAndAvatar">
-        <img src={playerAvatar} alt={`${player.name}"s avatar`} className="playerAvatar" loading="lazy" decoding="async" />
+        <img src={playerAvatar} alt={`${player.name}'s avatar`} className="playerAvatar" loading="lazy" decoding="async" />
         <h4>{player.name}</h4>
       </div>
 
