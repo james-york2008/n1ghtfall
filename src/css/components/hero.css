@@ -19,7 +19,8 @@
 }
 
 .textAccent {
-  color: var(--color-text-accent);
+  color: rgb(138, 50, 176);
+  background-color: black;
 }
 
 .heroButtons {
@@ -34,7 +35,7 @@
 }
 
 .ourSchedule {
-  background-color: rgb(8, 10, 50);
+  background-color: rgb(165, 35, 100);
 }
 
 @media (min-width: 768px) {

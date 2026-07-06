@@ -5,7 +5,6 @@ import RosterSection from "./components/roster/RosterSection"
 import RecruitmentSection from "./components/recruitment/RecruitmentSection"
 import Footer from "./components/layout/Footer"
 
-
 export default function App() {
   return (
     <>

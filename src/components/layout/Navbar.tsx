@@ -7,7 +7,11 @@ export default function Navbar() {
       <nav className="navbar">
         <img src={logo} className="logo" alt="N1ghtfall logo"/>
         <div className="title">
-          <h1>N1ghtfall</h1>
+          <h1 aria-label="Nightfall">
+            <span aria-hidden="true">N1ghtfall</span>
+          </h1>
+          
+          <span className="screenReaderText">Nightfall</span>
           <p>STRINOVA COMPETITIVE UNION</p>
         </div>
 
