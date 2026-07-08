@@ -20,6 +20,7 @@
   margin: var(--space-4);
   font-size: 1rem;
   width: 66%;
+  background-color: rgb(216, 0, 255);
 }
 
 @media (min-width: 768px) {
