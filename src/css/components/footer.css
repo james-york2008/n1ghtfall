@@ -13,11 +13,11 @@ footer {
 }
 
 .disclaimer a {
-  color: rgb(216, 0, 255);
+  color: var(--color-text-accent);
 }
 
 .tagline {
-  color: rgb(216, 0, 255);
+  color: var(--color-text-accent);
   text-align: center;
   margin: var(--space-6);
   letter-spacing: 0.1em;
