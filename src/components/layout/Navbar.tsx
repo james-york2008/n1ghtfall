@@ -5,11 +5,9 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <img src={logo} className="logo" alt="N1ghtfall logo"/>
+        <img src={logo} className="logo" alt="Nightfall logo"/>
         <div className="title">
-          <h1 aria-label="Nightfall">
-            <span aria-hidden="true">N1ghtfall</span>
-          </h1>
+          <h1>N1ghtfall</h1>
           
           <span className="screenReaderText">Nightfall</span>
           <p>STRINOVA COMPETITIVE UNION</p>
