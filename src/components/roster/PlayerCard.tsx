@@ -16,7 +16,7 @@ const playerAvatars: Record<string, string> = import.meta.glob(
 
 
 export default function Player({ player }:Props) {
-  let playerAvatar = playerAvatars[`../../assets/playerAvatars/${player.avatarLink}`] ?? fallbackImage
+  const playerAvatar = playerAvatars[`../../assets/playerAvatars/${player.avatarLink}`] ?? fallbackImage
 
   return (
     <article className="player">

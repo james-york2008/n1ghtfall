@@ -19,7 +19,7 @@ export default function RenderCharacters({ player }:Props) {
   return(
     <div>
       {player.preferredCharacters.map((character) => {
-        let characterAvatar = characterAvatars[`../../assets/characterAvatars/${character.characterImageLink}`] ?? fallbackImage
+        const characterAvatar = characterAvatars[`../../assets/characterAvatars/${character.characterImageLink}`] ?? fallbackImage
         
         return(
           <a href={characterWikiUrl} target="_blank" rel="noopener noreferrer" key={character.id}><img src={characterAvatar} alt={character.altText} className="characterAvatars" loading="lazy" decoding="async" /></a>
