@@ -1,8 +1,8 @@
 # N1ghtfall
 [Live Site](https://james-york2008.github.io/n1ghtfall/)
 
-![Image of the N1ghtfall landing page on desktop](./src/assets/readmeImages/desktopN1ghtfall.png)
-![Image of the N1ghtfall landing page on mobile](./src/assets/readmeImages//mobileN1ghtfall.jpg)
+![Image of the N1ghtfall landing page on desktop](./src/assets/readmeImages/desktopN1ghtfall.webp)
+![Image of the N1ghtfall landing page on mobile](./src/assets/readmeImages//mobileN1ghtfall.webp)
 
 
 ## Overview: 
@@ -42,7 +42,7 @@ Open your browser and navigate to `http://localhost:5173`
 
 
 ## Challenges Faced and Lessons Learned: 
-One of the biggest issues I faced was asset managing. I largely solved this issue by replacing manual imports with Vite's method import.meta.glob. This decision improved scalability dramatically, as well as maintainability. 
+One of the biggest issues I faced was asset managing. I largely solved this issue by replacing manual imports with Vite's method import.meta.glob. This decision improved scalability dramatically, as well as maintainability. I also replaced larger `.jpg` and `.png` assets with smaller, more performant `.webp`s.
 
 I also faced some deployment problems that did not appear in the local environment. One of which was a white screen issue after deployment to GitHub pages. Debugging this issue and several others taught me how bundlers, routing behavior, and asset paths differ between development and production environments.
 

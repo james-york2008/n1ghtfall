@@ -1,4 +1,4 @@
-import clock from "../../assets/icons/clock.png"
+import clock from "../../assets/icons/clock.webp"
 import type { Event as EventType } from "../../types/event"
 
 type Props = {

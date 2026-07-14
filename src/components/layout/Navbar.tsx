@@ -1,5 +1,5 @@
-import logo from "../../assets/logo.png"
-import discordIcon from "../../assets/icons/discord.png"
+import logo from "../../assets/logo.webp"
+import discordIcon from "../../assets/icons/discord.webp"
 
 export default function Navbar() {
   return (

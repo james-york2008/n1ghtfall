@@ -1,4 +1,4 @@
-import fallbackImage from "../../assets/fallbackImage.png" 
+import fallbackImage from "../../assets/fallbackImage.webp" 
 import type { Player } from "../../types/player"
 
 type Props = {
