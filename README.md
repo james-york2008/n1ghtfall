@@ -42,11 +42,11 @@ Open your browser and navigate to `http://localhost:5173`
 
 
 ## Challenges Faced and Lessons Learned: 
-One of the biggest issues I faced was asset managing. I largely solved this issue by replacing manual imports with Vite's method import.meta.glob. This decision improved scalability dramatically, as well as maintainability. I also replaced larger `.jpg` and `.png` assets with smaller, more performant `.webp`s.
+One of the biggest issues I faced was asset managing. I largely solved this issue by replacing manual imports with Vite's method import.meta.glob. This decision improved scalability dramatically, as well as maintainability. I also replaced larger `.jpg` and `.png` assets with smaller, more performant `.webp`s, and later re-encoded them with `sharp` to truly reduce file size.
 
 I also faced some deployment problems that did not appear in the local environment. One of which was a white screen issue after deployment to GitHub pages. Debugging this issue and several others taught me how bundlers, routing behavior, and asset paths differ between development and production environments.
 
-Another challenge was consistant styling across the entire product while avoiding unintended side effects. In correcting these issues, I learned the importance of scoped styling, and consistency across different files.
+Another challenge was consistent styling across the entire product while avoiding unintended side effects. In correcting these issues, I learned the importance of scoped styling, and consistency across different files.
 
 Overall, this project helped me gain real world experience with React project structure, debugging workflows, and TypeScript-based UI code.
 
