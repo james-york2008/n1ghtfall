@@ -42,13 +42,23 @@ Open your browser and navigate to `http://localhost:5173`
 
 
 ## Challenges Faced and Lessons Learned: 
-One of the biggest issues I faced was asset managing. I largely solved this issue by replacing manual imports with Vite's method import.meta.glob. This decision improved scalability dramatically, as well as maintainability. I also replaced larger `.jpg` and `.png` assets with smaller, more performant `.webp`s, and later re-encoded them with `sharp` to truly reduce file size.
 
-I also faced some deployment problems that did not appear in the local environment. One of which was a white screen issue after deployment to GitHub pages. Debugging this issue and several others taught me how bundlers, routing behavior, and asset paths differ between development and production environments.
+### Asset Management and Optimization
+- **Scalability Bottlenecks:** Manual imports became unmanageable as the project grew
+- **Vite Automation:** Transitioned to `import.meta.glob` to automate asset loading and improve maintainability
+- **Performance Tuning:** Replaced large `.jpg` and `.png` files with high-performance `.webp` formats
+- **Advanced Compression:** Leveraged `sharp` to re-encode images and drastically minimize bundle sizes
 
-Another challenge was consistent styling across the entire product while avoiding unintended side effects. In correcting these issues, I learned the importance of scoped styling, and consistency across different files.
+### Production Deployment Discrepancies
+- **White Screen Build Bug:** Encountered a blank screen anomaly on GitHub Pages deployment
+- **Environment Divergence:** Debugged discrepancies between local development and production environments
+- **Core Learnings:** Mastered how bundlers process routing behaviors and relative asset paths during compilation
 
-Overall, this project helped me gain real world experience with React project structure, debugging workflows, and TypeScript-based UI code.
+### Global vs. Scoped CSS Architecture
+- **Style Bleeding:** Faced unintended side effects when styles inadvertently leaked across components
+- **Visual Inconsistency:** Struggled to maintain a cohesive look across multiple disjointed files
+- **Design Solution:** Learned the critical importance of scoped styling and strict design consistency
+
 
 ## Potential Future Improvements: 
 - More thoroughly standardize the visual design system.
