@@ -1,5 +1,6 @@
 import logo from "../../assets/logo.webp"
 import discordIcon from "../../assets/icons/discord.webp"
+import ScreenReaderText from "../ui/ScreenReaderText"
 
 export default function Navbar() {
   return (
@@ -7,9 +8,9 @@ export default function Navbar() {
       <nav className="navbar">
         <img src={logo} className="logo" alt="Nightfall logo"/>
         <div className="title">
-          <h1>N1ghtfall</h1>
+          <h1 aria-hidden="true">N1ghtfall</h1>
           
-          <span className="screenReaderText">Nightfall</span>
+          <ScreenReaderText>Nightfall</ScreenReaderText>
           <p>STRINOVA COMPETITIVE UNION</p>
         </div>
 

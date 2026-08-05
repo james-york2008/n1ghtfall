@@ -1,4 +1,5 @@
 import clock from "../../assets/icons/clock.webp"
+import ScreenReaderText from "../ui/ScreenReaderText"
 import type { Event as EventType } from "../../types/event"
 
 type Props = {
@@ -8,7 +9,8 @@ type Props = {
 export default function Event({ event }:Props) {
   return(
     <article className="event">
-      <p className="eventDate"><span className="dateDay">{event.dateDay}</span><br />{event.dateMonth}</p>
+      <p className="eventDate" aria-hidden="true"><span className="dateDay">{event.dateDay}</span><br />{event.dateMonth}</p>
+      <ScreenReaderText>{event.dateMonth} {event.dateDay}</ScreenReaderText>
       <div className="eventLabelContainer">
         <h4 className="eventLabel">{event.eventLabel}</h4>
         <p>{event.eventDetails}</p>
