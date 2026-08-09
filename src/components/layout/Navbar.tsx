@@ -11,7 +11,7 @@ export default function Navbar() {
           <h1>
             <ScreenReaderText>Nightfall</ScreenReaderText>
             <span aria-hidden="true">N1ghtfall</span>        
-            </h1>
+          </h1>
 
           <p>STRINOVA COMPETITIVE UNION</p>
         </div>
