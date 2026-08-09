@@ -34,11 +34,26 @@ npm run dev
 Open your browser and navigate to `http://localhost:5173`
 
 
+## Quality Checks
+**Run automated tests:**
+
+```bash
+npm test -- --run
+```
+
+**Run linting:**
+
+```bash
+npm run lint
+```
+
+
 ## Stack: 
 - **Framework:** ReactJS 
 - **Language:** TypeScript 
 - **Styling:** CSS
 - **Build Tool:** Vite
+- **Testing:** Vitest
 
 
 ## Challenges Faced and Lessons Learned: 
@@ -59,9 +74,17 @@ Open your browser and navigate to `http://localhost:5173`
 - **Visual Inconsistency:** Struggled to maintain a cohesive look across multiple disjointed files
 - **Design Solution:** Learned the critical importance of scoped styling and strict design consistency
 
+### Accessibility Improvements
+- **Screen Reader Text:** Implemented a screen reader text component to add additional context for screen readers
+- **Screen Reader pronunciation:** Used screen reader text to help assistive technologies with difficult spelling
+- **Color Contrast Adjustments:** Altered the visual identity of the application to maintain accessible contrast ratios
+- **Heading Hierarchy:** Ensured a logical `h1 -> h2 -> h3 -> h4` heading structure
+
+### Automated Testing
+- **Vitest Automated Testing:** Decided to use Vitest instead of Jest since this project already uses Vite
+
 
 ## Potential Future Improvements: 
 - More thoroughly standardize the visual design system.
 - Replace placeholder data with real content.
 - Expand the application with community focused features like a match history section, or a media gallery for clips and highlights.
-- Implement automated testing with Jest to strengthen long-term maintainability and reduce regression issues as the application expands.

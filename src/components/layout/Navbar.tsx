@@ -8,9 +8,11 @@ export default function Navbar() {
       <nav className="navbar">
         <img src={logo} className="logo" alt="Nightfall logo"/>
         <div className="title">
-          <h1 aria-hidden="true">N1ghtfall</h1>
-          
-          <ScreenReaderText>Nightfall</ScreenReaderText>
+          <h1>
+            <ScreenReaderText>Nightfall</ScreenReaderText>
+            <span aria-hidden="true">N1ghtfall</span>        
+            </h1>
+
           <p>STRINOVA COMPETITIVE UNION</p>
         </div>
 
