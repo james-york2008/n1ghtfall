@@ -49,11 +49,12 @@ npm run lint
 
 
 ## Stack: 
+
 - **Framework:** ReactJS 
 - **Language:** TypeScript 
 - **Styling:** CSS
 - **Build Tool:** Vite
-- **Testing:** Vitest
+- **Automated Testing:** Vitest
 
 
 ## Challenges Faced and Lessons Learned: 
@@ -81,7 +82,15 @@ npm run lint
 - **Heading Hierarchy:** Ensured a logical `h1 -> h2 -> h3 -> h4` heading structure
 
 ### Automated Testing
-- **Vitest Automated Testing:** Decided to use Vitest instead of Jest since this project already uses Vite
+- **Testing Framework:** Decided to use Vitest instead of Jest since this project already uses Vite
+- **React Testing:** Used React Testing Library to test components based on user-visible behavior and accessibility
+- **Accessible Queries:** Used semantic queries such as `getByRole` and accessible names to make the tests reflect how users interact with the app
+
+#### Navbar Testing
+- **Render Verification:** Confirmed the navbar and navigation landmark renders correctly
+- **Discord Link:** Verified the Discord link uses the correct URL and security attributes
+- **Logo Accessibility:** Ensured the logo has the correct alt text
+- **Scree Reader Support:** Verified the visually stylized `N1ghtfall` title reads as `Nightfall` to assistive technologies
 
 
 ## Potential Future Improvements: 
