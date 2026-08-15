@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . && npm run lintMd",
+    "lintMd": "markdownlint-cli2 \"**/*.md\" \"!node_modules/**\"",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -37,6 +38,7 @@
     "globals": "^17.6.0",
     "jest-axe": "^11.0.0",
     "jsdom": "^29.1.1",
+    "markdownlint-cli2": "^0.23.2",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
     "vite": "^8.0.12",
