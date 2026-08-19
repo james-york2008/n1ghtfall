@@ -3,7 +3,7 @@ import ScreenReaderText from "../ui/ScreenReaderText"
 
 export default function Hero () {
   return  (
-    <section className="hero" style={{
+    <section className="hero" aria-label="Welcome to Nightfall" style={{
       backgroundImage: `url(${heroImage})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
