@@ -99,6 +99,12 @@ npm run lint
 - **Logo Accessibility:** Ensured the logo has the correct alt text
 - **Scree Reader Support:** Verified the visually stylized `N1ghtfall` title reads as `Nightfall` to assistive technologies
 
+#### Hero Testing
+
+- **Render Verification:** Confirmed the hero renders correctly
+- **`h2` Text:** Ensured the `h2` element has the correct text content
+- **Navigation links:** Verified the navigation links render with the correct attributes
+
 ## Potential Future Improvements
 
 - More thoroughly standardize the visual design system.
