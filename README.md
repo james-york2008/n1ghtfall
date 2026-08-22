@@ -110,3 +110,7 @@ npm run lint
 - More thoroughly standardize the visual design system.
 - Replace placeholder data with real content.
 - Expand the application with community focused features like a match history section, or a media gallery for clips and highlights.
+- Add in depth player pages do display information and social media links
+- Match history page to display match replays
+- Implement either an about section or about page
+- Implement routing with React Router
