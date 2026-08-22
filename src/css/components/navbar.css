@@ -2,15 +2,10 @@
     width: 100%;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .logo {
     height: 5rem;
-}
-
-.discordButton img {
-    height: var(--icon-md);
 }
 
 .discordButton {
@@ -18,6 +13,7 @@
     margin: auto 0 auto auto;
     display: flex;
     font-size: var(--text-xs);
+    height: 45px;
 }
 
 .title {

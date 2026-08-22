@@ -9,7 +9,13 @@ export default function Hero () {
       backgroundPosition: "center",
     }}>
       <h2>WE COMPETE.<br />WE <span className="textAccent">ELEVATE.</span></h2>
-      <p><span aria-hidden="true">N1ghtfall</span><ScreenReaderText>Nightfall</ScreenReaderText> is a competitive Strinova Mobile union built for players who strive for excellence, teamwork, discipline, and progress.<br />This is our standard.</p>
+      
+      <p>
+        <ScreenReaderText>Nightfall</ScreenReaderText> 
+
+        <span aria-hidden="true">N1ghtfall </span>
+        is a competitive Strinova Mobile union built for players who strive for excellence, teamwork, discipline, and progress.<br />This is our standard.
+      </p>
 
       <div className="heroButtonsWrapper">
         <a className="cutButton heroButtons ctaButton viewRosterButton" href="#roster">VIEW ROSTER</a>
