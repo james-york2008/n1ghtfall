@@ -4,7 +4,7 @@
 [Live Site](https://james-york2008.github.io/n1ghtfall/)
 
 ![Image of the N1ghtfall landing page on desktop](./src/assets/readmeImages/desktopN1ghtfall.webp)
-![Image of the N1ghtfall landing page on mobile](./src/assets/readmeImages//mobileN1ghtfall.webp)
+![Image of the N1ghtfall landing page on mobile](./src/assets/readmeImages/mobileN1ghtfall.webp)
 
 ## Overview
 
@@ -56,6 +56,7 @@ npm run lint
 - **Styling:** CSS
 - **Build Tool:** Vite
 - **Testing:** Vitest + React Testing Library
+- **Routing:** React Router
 
 ## Challenges Faced and Lessons Learned
 
@@ -105,12 +106,17 @@ npm run lint
 - **`h2` Text:** Ensured the `h2` element has the correct text content
 - **Navigation links:** Verified the navigation links render with the correct attributes
 
+### Code Quality
+
+- **Indentation:** Standardized the amount of indentation across files to maintain a more organized, readable structure
+- **Quotation Marks:** Replaced inconsistent `'` and `"` usage with consistent `"`
+
 ## Potential Future Improvements
 
-- More thoroughly standardize the visual design system.
-- Replace placeholder data with real content.
-- Expand the application with community focused features like a match history section, or a media gallery for clips and highlights.
+- More thoroughly standardize the visual design system
+- Replace placeholder data with real content
+- Expand the application with community focused features like a match history section, or a media gallery for clips and highlights
 - Add in depth player pages do display information and social media links
 - Match history page to display match replays
 - Implement either an about section or about page
-- Implement routing with React Router
+- Reorganize folder structure to have a more scalable design
