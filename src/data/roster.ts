@@ -10,13 +10,15 @@ export const players: Player[] = [
       {
         id: "swim1901CharacterOne",
         characterImageLink: "michele.webp",
-        altText: "Swim1901 prefers to play Michele on defense"
+        altText: "Swim1901 prefers to play Michele on defense",
+        name: "michele"
       },
       
       {
         id: "swim1901CharacterTwo",
         characterImageLink: "reiichi.webp",
-        altText: "Swim1901 prefers to play Reiichi on attack"
+        altText: "Swim1901 prefers to play Reiichi on attack",
+        name: "reiichi"
       }
     ]
   },
@@ -30,13 +32,15 @@ export const players: Player[] = [
       {
         id: "swim1902CharacterOne",
         characterImageLink: "flavia.webp",
-        altText: "Swim1902 prefers to play Flavia on defense"
+        altText: "Swim1902 prefers to play Flavia on defense",
+        name: "flavia"
       },
       
       {
         id: "swim1902CharacterTwo",
         characterImageLink: "ming.webp",
-        altText: "Swim1902 prefers to play Ming on attack"
+        altText: "Swim1902 prefers to play Ming on attack",
+        name: "ming"
       }
     ]  
   },
@@ -50,13 +54,15 @@ export const players: Player[] = [
       {
         id: "swim1903CharacterOne",
         characterImageLink: "kokona.webp",
-        altText: "Swim1903 prefers to play Kokona on defense"
+        altText: "Swim1903 prefers to play Kokona on defense",
+        name: "kokona"
       },
       
       {
         id: "swim1903CharacterTwo",
         characterImageLink: "kanami.webp",
-        altText: "Swim1903 prefers to play Kanami on attack"
+        altText: "Swim1903 prefers to play Kanami on attack",
+        name: "kanami"
       }
     ]
   },
@@ -70,13 +76,15 @@ export const players: Player[] = [
       {
         id: "swim1904CharacterOne",
         characterImageLink: "celestia.webp",
-        altText: "Swim1904 prefers to play Celestia on defense"
+        altText: "Swim1904 prefers to play Celestia on defense",
+        name: "celestia"
       },
       
       {
         id: "swim1904CharacterTwo",
         characterImageLink: "celestia.webp",
-        altText: "Swim1904 prefers to play Celestia on attack"
+        altText: "Swim1904 prefers to play Celestia on attack",
+        name: "celestia"
       }
     ]
   },    
@@ -90,13 +98,15 @@ export const players: Player[] = [
       {
         id: "swim1905CharacterOne",
         characterImageLink: "yugiri.webp",
-        altText: "Swim1905 prefers to play Yugiri on defense"
+        altText: "Swim1905 prefers to play Yugiri on defense",
+        name: "yugiri"
       },
       
       {
         id: "swim1905CharacterTwo",
         characterImageLink: "meredith.webp",
-        altText: "Swim1905 prefers to play Meredith on attack"
+        altText: "Swim1905 prefers to play Meredith on attack",
+        name: "meredith"
       }
     ]  
   },

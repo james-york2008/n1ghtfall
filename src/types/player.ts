@@ -1,7 +1,8 @@
 interface preferredCharacters {
   id: string,
   characterImageLink: string,
-  altText: string
+  altText: string,
+  name: string
 }
 
 export type Player = {

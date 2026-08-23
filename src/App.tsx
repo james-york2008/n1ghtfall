@@ -4,7 +4,9 @@ import ScheduleSection from "./components/schedule/ScheduleSection"
 import RosterSection from "./components/roster/RosterSection"
 import RecruitmentSection from "./components/recruitment/RecruitmentSection"
 import Footer from "./components/layout/Footer"
+
 import { useEffect } from "react"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 export default function App() {
   useEffect(() => {
@@ -27,16 +29,30 @@ export default function App() {
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      
-      <main className="sectionsContainer">
-        <ScheduleSection />
-        <RosterSection />
-        <RecruitmentSection />
-      </main>
-      
-      <Footer />  
+      <BrowserRouter>
+        <Routes>
+          <Route path="/N1ghtfall" element={
+            <>
+              <Navbar />
+              
+              <main>
+                <Hero />
+
+                <div className="sectionBreak" />
+                  
+                <div className="sectionsContainer">
+                  <ScheduleSection />
+                  <RosterSection />
+                  <RecruitmentSection />
+                </div>
+              </main>
+              
+              <Footer />        
+            </>
+          } />
+        </Routes>
+      </BrowserRouter>
+        
     </>
   )
 }

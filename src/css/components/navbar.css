@@ -1,52 +1,59 @@
 .navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-    height: 5rem;
+  height: 5rem;
 }
 
 .discordButton {
-    padding: var(--space-1) var(--space-3);
-    margin: auto 0 auto auto;
-    display: flex;
-    font-size: var(--text-xs);
-    height: 45px;
+  padding: var(--space-1) var(--space-3);
+  margin: auto 0 auto auto;
+  display: flex;
+  font-size: 0.5rem;
+}
+
+.discordButton img {
+  height: 15px;
 }
 
 .title {
-    padding: var(--space-1) var(--space-1) var(--space-1) 0;
+  padding: var(--space-1) var(--space-1) var(--space-1) 0;
 }
 
 .title h1 {
-    font-size: var(--text-lg);
+  font-size: var(--text-lg);
 }
 
 .title p {
-    color: var(--color-text-secondary);
-    padding-top: var(--space-1);
-    font-size: var(--text-xs);
-    max-width: 9rem;
+  color: var(--color-text-secondary);
+  padding-top: var(--space-1);
+  font-size: var(--text-xs);
+  max-width: 9rem;
 }
 
 @media (min-width: 768px) {
-    .title h1 {
-        font-size: var(--text-xl);
-    }
+  .title h1 {
+    font-size: var(--text-xl);
+  }
     
-    .title p {
-        font-size: var(--text-md);
-        max-width: 25rem;
-    }
+  .title p {
+    font-size: var(--text-md);
+    max-width: 25rem;
+  }
     
-    .discordButton {
-        font-size: var(--text-lg);
-        margin: auto var(--space-3) auto auto;
-    }
+  .discordButton {
+    font-size: var(--text-lg);
+    margin: auto var(--space-3) auto auto;
+  }
 
-    .logo {
-        height: 10rem;
-    }
+  .discordButton img {
+    height: 35px;
+  }
+  
+  .logo {
+    height: 10rem;
+  }
 }

@@ -4,19 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://james-york2008.github.io/n1ghtfall",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint . && npm run lintMd",
-    "lintMd": "markdownlint-cli2 \"**/*.md\" \"!node_modules/**\"",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "test": "vitest"
-  },
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc -b && vite build",
+      "preview": "vite preview",
+      "test": "vitest",
+      "lint": "eslint . && npm run lintMd",
+      "lintMd": "markdownlint-cli2 \"**/*.md\" \"!node_modules/**\"",
+      "predeploy": "npm run lint && npm test -- --run && npm run build",
+      "deploy": "gh-pages -d dist"
+    },
   "dependencies": {
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.18.2"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
