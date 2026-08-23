@@ -14,15 +14,13 @@ const characterAvatars: Record<string, string> = import.meta.glob(
 )
 
 export default function RenderCharacters({ player }:Props) {
-  const characterWikiUrl = "https://strinova.org/wiki/Characters"
-
   return(
     <div>
       {player.preferredCharacters.map((character) => {
         const characterAvatar = characterAvatars[`../../assets/characterAvatars/${character.characterImageLink}`] ?? fallbackImage
         
         return(
-          <a href={characterWikiUrl} target="_blank" rel="noopener noreferrer" key={character.id}><img src={characterAvatar} alt={character.altText} className="characterAvatars" loading="lazy" decoding="async" /></a>
+          <a href={`https://strinova.org/wiki/${character.name}`} target="_blank" rel="noopener noreferrer" key={character.id}><img src={characterAvatar} alt={character.altText} className="characterAvatars" loading="lazy" decoding="async" /></a>
         )
       })}
     </div>

@@ -1,39 +1,39 @@
 :root {
-    --color-bg: rgb(0, 0, 5);
-    --color-text-primary: rgb(255, 255, 255);
-    --color-text-secondary: rgb(170, 170, 190);
-    --color-text-accent: rgb(216, 0, 255);
+  --color-bg: rgb(0, 0, 5);
+  --color-text-primary: rgb(255, 255, 255);
+  --color-text-secondary: rgb(170, 170, 190);
+  --color-text-accent: rgb(216, 0, 255);
 
-    --section-border: 2px solid rgba(98, 10, 176, 0.5);
+  --section-border: 2px solid rgba(98, 10, 176, 0.5);
 
-    --radius-sm: 6px;
-    --radius-md: 12px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
 
-    --text-xs: 0.75rem;
-    --text-sm: 0.875rem;
-    --text-md: 1rem;
-    --text-lg: 1.25rem;
-    --text-xl: 2rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 2rem;
 
-    --space-1: 4px;
-    --space-2: 8px;
-    --space-3: 12px;
-    --space-4: 16px;
-    --space-5: 24px;
-    --space-6: 32px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
 
-    --clipped-button: polygon(
-        12px 0,
-        100% 0,
-        100% calc(100% - 12px),
-        calc(100% - 12px) 100%,
-        0 100%,
-        0 12px
-    );
+  --clipped-button: polygon(
+    12px 0,
+    100% 0,
+    100% calc(100% - 12px),
+    calc(100% - 12px) 100%,
+    0 100%,
+    0 12px
+  );
 
-    --icon-md: 24px;
-    --icon-lg: 32px;
+  --icon-md: 24px;
+  --icon-lg: 32px;
 
-    --avatar-sm: 32px;
-    --avatar-md: 48px;
+  --avatar-sm: 32px;
+  --avatar-md: 48px;
 }
