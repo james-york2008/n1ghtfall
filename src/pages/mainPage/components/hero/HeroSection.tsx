@@ -1,5 +1,5 @@
-import heroImage from "../../assets/heroImage.webp"
-import ScreenReaderText from "../ui/ScreenReaderText"
+import heroImage from "../../../../assets/heroImage.webp"
+import ScreenReaderText from "../../../../components/ui/ScreenReaderText"
 
 export default function Hero () {
   return  (

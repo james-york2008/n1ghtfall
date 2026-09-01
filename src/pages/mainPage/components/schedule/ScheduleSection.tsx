@@ -1,5 +1,5 @@
-import SectionCard from "../ui/Section";
-import { events } from "../../data/events"
+import SectionCard from "../../../../components/ui/Section";
+import { events } from "../../../../data/events"
 import Event from "./EventCard";
 
 export default function ScheduleSection () {

@@ -1,6 +1,6 @@
-import clock from "../../assets/icons/clock.webp"
-import ScreenReaderText from "../ui/ScreenReaderText"
-import type { Event as EventType } from "../../types/event"
+import clock from "../../../../assets/icons/clock.webp"
+import ScreenReaderText from "../../../../components/ui/ScreenReaderText"
+import type { Event as EventType } from "../../../../types/event"
 
 type Props = {
   event: EventType

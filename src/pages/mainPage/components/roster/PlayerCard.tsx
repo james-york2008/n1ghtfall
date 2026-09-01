@@ -1,5 +1,5 @@
-import fallbackImage from "../../assets/fallbackImage.webp"
-import type { Player } from "../../types/player"
+import fallbackImage from "../../../../assets/fallbackImage.webp"
+import type { Player } from "../../../../types/player"
 import RenderCharacters from "./RenderCharacters"
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
 }
 
 const playerAvatars: Record<string, string> = import.meta.glob(
-  "../../assets/playerAvatars/*",
+  "../../../../assets/playerAvatars/*",
   {
     eager: true,
     import: "default"
@@ -16,7 +16,7 @@ const playerAvatars: Record<string, string> = import.meta.glob(
 
 
 export default function Player({ player }:Props) {
-  const playerAvatar = playerAvatars[`../../assets/playerAvatars/${player.avatarLink}`] ?? fallbackImage
+  const playerAvatar = playerAvatars[`../../../../assets/playerAvatars/${player.avatarLink}`] ?? fallbackImage
 
   return (
     <article className="player">

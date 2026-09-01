@@ -1,9 +1,4 @@
-import Navbar from "./components/layout/Navbar"
-import Hero from "./components/hero/HeroSection"
-import ScheduleSection from "./components/schedule/ScheduleSection"
-import RosterSection from "./components/roster/RosterSection"
-import RecruitmentSection from "./components/recruitment/RecruitmentSection"
-import Footer from "./components/layout/Footer"
+import MainPage from "./pages/mainPage/MainPage"
 
 import { useEffect } from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
@@ -31,25 +26,7 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/N1ghtfall" element={
-            <>
-              <Navbar />
-              
-              <main>
-                <Hero />
-
-                <div className="sectionBreak" />
-                  
-                <div className="sectionsContainer">
-                  <ScheduleSection />
-                  <RosterSection />
-                  <RecruitmentSection />
-                </div>
-              </main>
-              
-              <Footer />        
-            </>
-          } />
+          <Route path="/N1ghtfall" element={<MainPage />} />
         </Routes>
       </BrowserRouter>
         
