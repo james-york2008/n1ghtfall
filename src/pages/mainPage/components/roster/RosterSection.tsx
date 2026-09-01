@@ -1,5 +1,5 @@
-import SectionCard from "../ui/Section"
-import { players } from "../../data/roster"
+import SectionCard from "../../../../components/ui/Section"
+import { players } from "../../../../data/roster"
 import Player from "./PlayerCard"
 
 export default function RosterSection () {
